@@ -29,7 +29,7 @@ To predict heart rates for new data, use the provided run.py script. Follow the 
 ### Prerequisites
 
 - Python 3.x
-- Required Python libraries (specified in requirements.txt)
+- Required Python libraries
 
 ### Instructions
 
