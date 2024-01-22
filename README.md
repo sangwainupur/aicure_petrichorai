@@ -44,5 +44,5 @@ To predict heart rates for new data, use the provided run.py script. Follow the 
 
 3. Run the run.py and generate the results.csv in the terminal:
    ```bash
-   python run.py test_data.csv
+   python run.py sample_test_data.csv
 4. Just in case there are some version discrepancies in the system of the judging panel, we have also added our final results in the file our_generated_results.csv
