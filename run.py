@@ -27,15 +27,10 @@ def load_model():
     model = pickle.load(open("check_new_fin.pkl",'rb'))
     return model
 
-def make_predictions(model):
-    # Assuming 'input_data' is a DataFrame with the same features as your training data
-    test_file_path = "merged_data.csv"
-    test_data = pd.read_csv(test_file_path)
-
+def make_predictions(model,test_data):
     test_data = test_data.drop('datasetId', axis=1)
-    X_test = test_data.drop('HR', axis=1)
-    X_test=X_test.drop('uuid', axis=1)  # Features (all columns except 'HR' and 'uuid')
-    y = test_data['HR']
+    X_test=test_data.drop('uuid', axis=1)  
+
 
     categorical_columns = ['condition']
     condition_index = X_test.columns.get_loc('condition')
@@ -53,16 +48,14 @@ def make_predictions(model):
     return preds
 
 def main():
-    # Parse command line arguments
     parser = argparse.ArgumentParser(description="Make predictions using a trained model.")
     parser.add_argument("input_file", help="Path to the input file (test_data.csv)")
     args = parser.parse_args()
 
-    # # Load the input data
     input_data = pd.read_csv(args.input_file)
 
     model=load_model()
-    predictions=make_predictions(model)
+    predictions=make_predictions(model,input_data)
     ids = input_data['uuid']
 
     output = pd.DataFrame({'uuid': ids,
