@@ -36,7 +36,7 @@ To predict heart rates for new data, use the provided run.py script. Follow the 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/heart-rate-prediction.git
+   git clone https://github.com/sangwainupur/aicure_petrichorai
    cd heart-rate-prediction
 2. To install all the necessary modules run the following command in the terminal:
    ```bash
