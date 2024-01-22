@@ -16,6 +16,7 @@ This repository contains an advanced model for predicting an individual's heart 
 - *aicure_petrichorai.ipynb:* the final jupyter notebook used to train the model check_new_fin.pkl and contains details on data exploration, feature engineering, and model training.
 - *our_generated_results.csv:* Our final generated results on the provided sample_test_data.csv
 - *Report aicure_petrichorai:* The report containing the procedures and respective results in detail, and final conclusions and future work.
+- *requirements.txt:* The file that contains the required Python Libraries
 
 ## Model Development
 
@@ -29,7 +30,7 @@ To predict heart rates for new data, use the provided run.py script. Follow the 
 ### Prerequisites
 
 - Python 3.x
-- Required Python libraries
+- Required Python libraries (given in requirements.txt)
 
 ### Instructions
 
@@ -37,7 +38,11 @@ To predict heart rates for new data, use the provided run.py script. Follow the 
    ```bash
    git clone https://github.com/your-username/heart-rate-prediction.git
    cd heart-rate-prediction
-2. Run the run.py and generate the results.csv in the terminal:
+2. To install all the necessary modules run the following command in the terminal:
+   ```bash
+   pip install -r requirements.txt 
+
+3. Run the run.py and generate the results.csv in the terminal:
    ```bash
    python run.py test_data.csv
-3. Just in case there are some version discrepancies in the system of the judging panel, we have also added our final results in the file our_generated_results.csv
+4. Just in case there are some version discrepancies in the system of the judging panel, we have also added our final results in the file our_generated_results.csv
