@@ -1,3 +1,7 @@
+# Team name: aicure_petrichorai
+Team Members:
+- Nupur Sangwai(Ph No. - 7620588298)
+- Ankur De (Ph No. - 9674282229)
 # Heart Rate Prediction Model
 
 This repository contains an advanced model for predicting an individual's heart rate based on diverse attributes derived from ECG recordings. The dataset used for training is provided in train_data.csv.
