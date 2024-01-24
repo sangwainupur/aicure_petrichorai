@@ -11,17 +11,6 @@ import numpy as np
 # import seaborn as sns
 import tensorflow as tf
 
-# from sklearn import metrics
-# from sklearn.model_selection import train_test_split
-# from sklearn.linear_model import LinearRegression
-# from sklearn.metrics import mean_squared_error
-# from sklearn.preprocessing import OneHotEncoder
-# from sklearn.compose import ColumnTransformer
-# from sklearn.metrics import mean_absolute_error, mean_squared_error
-# from math import sqrt
-# from sklearn.preprocessing import StandardScaler
-# from tensorflow import keras
-
 def load_model():
     # Load the pre-trained model
     model = pickle.load(open("check_new_fin.pkl",'rb'))
